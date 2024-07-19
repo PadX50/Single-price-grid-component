@@ -13,7 +13,7 @@
 
 body {
     font-family: 'Karla', sans-serif;
-    background-color: var(--grayish-blue);
+    background-color: hsl(204, 43%, 93%);
 }
 
 h2 {
@@ -27,10 +27,21 @@ p {
     line-height: 1.5;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 600px;
+    margin: auto;
+}
+
 .content {
     padding: 20px;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column wrap;    
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -44,11 +55,15 @@ h5{
 .card {
     background-color: white;
     padding: 25px;
+    border-radius: 10px 10px 0 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .card p {
     padding-left: 15px;
     font-weight: 400;
+    font-size: 14px;
     padding-top: 5px;
     color: var(--light-gray);
 }
@@ -60,11 +75,15 @@ h5{
 .monthly {
     padding: 25px;
     background-color: var(--cyan);
+    border-radius: 0 0 0 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .monthly h4 {
     color: white;
     padding-bottom: 15px;
+    font-size: 20px;
 }
 
 .monthly h1 {
@@ -105,10 +124,26 @@ button {
     color: blueviolet;
 }
 
+.why {
+    background-color: hsl(179, 42%, 56%);
+    padding: 40px;
+    color: var(--light-gray);
+    padding-right: 80px;
+    border-radius: 0 0 10px 0;
+    align-items: center;
+    justify-content: center;
+}
 
+.why h4 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
 
-
-
+.why li {
+    line-height: 1.5;
+    font-size: 14px;
+    text-align: left;
+}
 
 .attribution { 
     font-size: 11px; text-align: center; 
