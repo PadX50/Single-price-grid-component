@@ -5,150 +5,138 @@
     --grayish-blue: hsl(218, 22%, 67%);
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Karla', sans-serif;
-    background-color: hsl(204, 43%, 93%);
-}
-
-h2 {
-    font-family: 'Karla', sans-serif;
-    color: var(--cyan);
-    padding: 15px;
-}
-
-p {
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    max-width: 600px;
-    margin: auto;
-}
-
-.content {
-    padding: 20px;
-    display: flex;
-    flex-flow: column wrap;    
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-h5{
-    color: var(--bright-yellow);
-    padding-left: 15px;
-    font-weight: 700;
-}
-
-.card {
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px 10px 0 0;
-    align-items: center;
-    justify-content: center;
-}
-
-.card p {
-    padding-left: 15px;
-    font-weight: 400;
-    font-size: 14px;
-    padding-top: 5px;
-    color: var(--light-gray);
-}
-
-.card2 {
-    display: flex;
-}
-
-.monthly {
-    padding: 25px;
-    background-color: var(--cyan);
-    border-radius: 0 0 0 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-.monthly h4 {
-    color: white;
-    padding-bottom: 15px;
-    font-size: 20px;
-}
-
-.monthly h1 {
-    color: white;
-}
-
-.monthly li {
-    display: flex;
-    flex-direction: row;
-}
-
-.monthly p {
-    color: var(--light-gray);
-}
-
-li {
-    list-style: none;
-}
-
-button {
-    font-family: 'Karla', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    border: 0;
-    border-radius: 5px;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 10px;
-    margin-top: 30px;
-    color: white;
-    background-color: var(--bright-yellow);
-    transition: all 0.4s ease-in-out; 
-}
-
-.btn:hover {
-    color: blueviolet;
-}
-
-.why {
-    background-color: hsl(179, 42%, 56%);
-    padding: 40px;
-    color: var(--light-gray);
-    padding-right: 80px;
-    border-radius: 0 0 10px 0;
-    align-items: center;
-    justify-content: center;
-}
-
-.why h4 {
-    font-size: 20px;
-    padding-bottom: 15px;
-}
-
-.why li {
-    line-height: 1.5;
-    font-size: 14px;
-    text-align: left;
-}
-
 .attribution { 
     font-size: 11px; text-align: center; 
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    min-width: 100vh;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+.card {
+    width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 15px 20px 10px rgb(37, 43, 70, 0.1);
+}
+
+.community {
+    padding: 40px;
+}
+
+h2 {
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 25px;
+    opacity: 0.9;
+}
+
+.community h3 {
+    font-weight: bold;
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 16px;
+    opacity: 0.9;
+}
+
+.community p{
+    color: hsl(204, 43%, 93%);
+    line-height: 30px;
+    opacity: 0.7;
+}
+
+.plan {
+    display: flex;
+}
+
+.sub{
+    padding: 40px;
+    background-color: hsl(179, 62%, 43%);
+    color: #fff;
+}
+
+.sub h3 {
+    padding-bottom: 20px;
+    opacity: 0.9;
+}
+
+.price{
+    display: inline-flex, !important;
+}
+
+.price-p {
+    padding: 8px 0px 0px 12px;
+    opacity: 0.5;
+}
+
+.access {
+    padding: 10px 0px 20px 0px;
+    opacity: 0.8;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    padding: 15px;
+    border: 5px;
+    border-radius: 5px;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    border: none;
+}
+
+.why {
+    padding: 40px;
+    background-color: hsl(179, 62%, 43%);
+    opacity: 0.8;
+    color: #fff;
+}
+
+.why h3 {
+    padding-bottom: 20px;
+    opacity: 0.9 !important;
+}
+
+li {
+    padding-bottom: 20px;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+    .why, .sub {
+        width: 50%;
+    }
+}
+
+@media(max-width:768px) {
+    .card {
+        width: 90%;
+        margin-top: 40px;
+    }
+    .plan {
+        display: flex;
+        flex-direction: column;
+    }
+    .community {
+        padding-right: 20px;
+    }
+    .why, .sub{
+        width: 100%;
+    }
 }
